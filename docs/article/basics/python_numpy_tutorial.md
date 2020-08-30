@@ -1,5 +1,10 @@
-<title>Python与Numpy的教程 - <%-__DOC_NAME__ %></title>
-<meta name="keywords" content="Python的教程,numpy的教程" />
+---
+meta:
+  - name: keywords
+    content: Python、Numpy 教程
+  - name: description
+    content: 我们将在本课程的所有作业中使用Python编程语言。Python本身就是一种伟大的通用编程语言，并且它在一些其...
+---
 
 # Python、Numpy 教程
 
@@ -370,7 +375,7 @@ g.greet(loud=True)   # Call an instance method; prints "HELLO, FRED!"
 
 ### 数组(Arrays)
 
-numpy数组是一个值网格，所有类型都相同，并由非负整数元组索引。 维数是数组的排名; 数组的形状是一个整数元组，给出了每个维度的数组大小。
+numpy数组是一个值网格，所有类型都相同，并由非负整数元组索引。 维数是数组的秩; 数组的形状是一个整数元组，给出了每个维度的数组大小。
 
 我们可以从嵌套的Python列表初始化numpy数组，并使用方括号访问元素：
 
@@ -739,7 +744,7 @@ print(y)  # Prints "[[ 2  2  4]
 1. 如果数组不具有相同的rank，则将较低等级数组的形状添加1，直到两个形状具有相同的长度。
 1. 如果两个数组在维度上具有相同的大小，或者如果其中一个数组在该维度中的大小为1，则称这两个数组在维度上是兼容的。
 1. 如果数组在所有维度上兼容，则可以一起广播。
-1. 广播之后，每个阵列的行为就好像它的形状等于两个输入数组的形状的元素最大值。
+1. 广播之后，每个数组的行为就好像它的形状等于两个输入数组的形状的元素最大值。
 1. 在一个数组的大小为1且另一个数组的大小大于1的任何维度中，第一个数组的行为就像沿着该维度复制一样
 
 如果对于以上的解释依然没有理解，请尝试阅读[这篇文档](/user_guide/numpy_basics/broadcasting.html)或[这篇解释](http://wiki.scipy.org/EricsBroadcastingDoc)中的说明。

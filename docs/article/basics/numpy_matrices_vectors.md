@@ -1,8 +1,16 @@
-<meta name="keywords" content="numpy矩阵,numpy向量" />
+---
+meta:
+  - name: keywords
+    content: NumPy 中的矩阵和向量
+  - name: description
+    content: numpy的``ndarray``类用于表示矩阵和向量。要在numpy中构造矩阵，我们在列表中列出矩阵的行，并将该列表传递给numpy数组构造函数。
+---
 
-# numpy中的矩阵和向量
+# NumPy 中的矩阵和向量
 
-numpy``ndarray``类用于表示矩阵和向量。要在numpy中构造矩阵，我们在列表中列出矩阵的行，并将该列表传递给numpy数组构造函数。
+numpy的``ndarray``类用于表示矩阵和向量。
+要在numpy中构造矩阵，我们在列表中列出矩阵的行，
+并将该列表传递给numpy数组构造函数。
 
 例如，构造与矩阵对应的numpy数组
 
@@ -70,7 +78,7 @@ w = np.dot(A,v)
 
 ```python
 A = np.array([[2,1,-2],[3,0,1],[1,1,-1]])
-b = np.transpose(np.array([[-3,5,-2]])
+b = np.transpose(np.array([[-3,5,-2]]))
 ```
 
 为了解决这个系统
@@ -113,7 +121,7 @@ Xty = np.dot(Xt,y)
 beta = np.linalg.solve(XtX,Xty)
 ```
 
-最后一行使用``np.linalg.solve``计算<b>β</ b>，因为等式是：
+最后一行使用``np.linalg.solve``计算<b>β</b>，因为等式是：
 
 <p class="eqn"><b>β</b> = (<i>X</i><sup><i>T</i></sup> <i>X</i>)<sup>-1</sup> <i>X</i><sup><i>T</i></sup> <b>y</b></p>
 
